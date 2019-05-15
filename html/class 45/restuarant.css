@@ -1,0 +1,65 @@
+html {
+    background-color: beige
+}
+
+body {
+    max-width: 90%;
+    margin: auto;
+    background-color: rgb(136, 59, 75);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSutjO_f853-w02AlPRqjNDS6TNXsjvxvergW8XGE1ob2Fgpzob);
+}
+
+h1 {
+    text-align: center;
+    display: inline-block;
+    color: lightslategray;
+    border-width: 2px;
+    border-color: firebrick;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+img {
+    height: 500px;
+    width: 450px;
+}
+
+div {
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+a {
+    font-size: x-large;
+}
+
+p {
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: 200;
+    text-align: start;
+    text-decoration: underline wavy chocolate;
+    text-shadow: 1px 1px 3px;
+    text-shadow: burlywood;
+    letter-spacing: 3px;
+    line-height: 30px;
+    transform: skew(1deg, 2deg);
+    margin-left: 30px;
+}
+
+ a:link { /*unvisited*/
+    color: red;
+}
+
+ a:hover {
+    text-decoration: underline;
+}
+
+ a:focus {
+    color: red;
+}
+
+ a:active {
+    color: yellow;
+}
