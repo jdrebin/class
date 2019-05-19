@@ -1,0 +1,97 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+    background-color: beige
+}
+
+body {
+    max-width: 90%;
+    margin: auto;
+    background-color: rgb(136, 59, 75);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSutjO_f853-w02AlPRqjNDS6TNXsjvxvergW8XGE1ob2Fgpzob);
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: firebrick;
+    border-style: solid;
+    border-radius: 10px;
+    position: fixed;
+    left: 200px;
+    right: 200px;
+}
+
+img {
+    height: 500px;
+    width: 450px;
+}
+
+div {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 150px;
+    box-sizing: border-box;
+    position: static;
+}
+
+a {
+    font-size: x-large;
+}
+
+p {
+    font-family: 'lora', serif;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: 200;
+    text-align: start;
+    text-decoration: underline wavy chocolate;
+    text-shadow: 1px 1px 3px;
+    text-shadow: burlywood;
+    letter-spacing: 3px;
+    line-height: 30px;
+    transform: skew(1deg, 2deg);
+    margin-left: 30px;
+    position: absolute;
+}
+
+ a:link { /*unvisited*/
+    color: red;
+}
+
+ a:hover {
+    text-decoration: underline;
+}
+
+ a:focus {
+    color: red;
+}
+
+ a:active {
+    color: yellow;
+}
