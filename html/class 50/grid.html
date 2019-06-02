@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            grid-gap: .5em;
+        }
+
+        div {
+            background-color: orangered;
+        }
+
+        @media screen and (min-width: 600px) {
+            body {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            div {
+                background-color: teal;
+            }
+
+            .foo {
+                grid-column: 1 / span 2;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            body {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas:
+                    "foo foo div div"
+                    "div div div div";
+            }
+
+            div {
+                background-color: red;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class=foo></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
