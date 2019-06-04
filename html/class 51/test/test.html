@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+                <li>
+                    <a href="#signUp">Sign Up</a>
+                </li>
+                <li>
+                    <a href="#financials">Financials</a>
+                </li>
+                <li>
+                    <a href="#aboutUs">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1 class="caps">estuff</h1>
+        <h1>A <font style='font-style:italic;'>PCS</font> company</h1>
+    </div>
+    <h1 id="products" class="collapseBottom">Products</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque porro labore velit in error
+        quis itaque iure
+        obcaecati. Sapiente odit eaque perspiciatis minima vero natus!</p>
+    <div class="productContainer">
+        <h1 id="compH" class="centered">Computers</h1>
+        <img id="compImg" src="macworld.jpg">
+        <p id="compP" class="productData collapseBottom collapseTop">Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Sunt eum
+            aut
+            id libero velit mollitia
+            accusantium. Inventore corporis distinctio nemo accusamus possimus nobis neque nam molestias, aperiam itaque
+            assumenda, voluptatibus earum mollitia doloribus illo expedita eius voluptatum ad quis minima!</p>
+        <h1 id="choirH" class="centered">Choirs</h1>
+        <video id="choirVid" src="El Hanaar Hazeh.mp4" controls preload="metadata" poster="shira.png"></video>
+        <p id="choirP" class="productData collapseBottom collapseTop">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+            Numquam
+            modi ea
+            blanditiis nobis
+            nesciunt sit aspernatur culpa dolore perferendis, animi magnam fuga in minima debitis est accusamus ducimus
+            quaerat facere? At beatae, maiores fugiat repudiandae aliquam saepe sunt ea voluptates.</p>
+        <h1 id="candyH" class="centered">Candy</h1>
+        <img id="candyImg" src="candy.png">
+        <p id="candyP" class="productData collapseTop">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+            qui, non
+            ipsum quam
+            magnam
+            obcaecati deleniti tempore eum id atque perferendis ab iusto dolores aperiam dolore enim voluptate. Quam
+            exercitationem vel, fuga vero pariatur accusantium neque eum veritatis placeat perferendis?
+        </p>
+        <div id="line1"></div>
+        <div id="line2"></div>
+    </div>
+    <div id="signUp">
+        <h1>Sign Me Up!</h1>
+        <form action="test.php" method="POST">
+            <label for="Name"></label>Name: <input name="Name" id="Name" placeholder="Your Name" required>
+            <label for="email"></label>Email: <input type="email" name="email" id="email" placeholder="Your Email"
+                required>
+            <input class=button type="submit" value="Sign Me Up!">
+        </form>
+    </div>
+    <h1 class="collapseBottom">Financials</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, provident ea nemo, ut reprehenderit exercitationem
+        doloribus aspernatur ratione pariatur maiores accusantium? Ipsum consequatur in ipsam?</p>
+    <article>
+        <table id="financials">
+            <caption>Profits - By Quarter</caption>
+            <thead>
+                <tr>
+                    <td>Year</td>
+                    <td>1st Quarter Profits</td>
+                    <td>2nd Quarter Profits</td>
+                    <td>3rd Quarter Profits</td>
+                    <td>4th Quarter Profits</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2012</td>
+                    <td>$1346531.45</td>
+                    <td>$1365424.54</td>
+                    <td>$2456765.45</td>
+                    <td>$4323652.34</td>
+                    <td>$41353135.45</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>$1384323.12</td>
+                    <td>$6127273.76</td>
+                    <td>$7182831.43</td>
+                    <td>$6323642.24</td>
+                    <td>$29134324.35</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>$5437453.43</td>
+                    <td>$3224544.54</td>
+                    <td>$6123391.54</td>
+                    <td>$2271118.76</td>
+                    <td>$224245434.73</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>$3344424.44</td>
+                    <td>$2994343.51</td>
+                    <td>NA</td>
+                    <td>NA</td>
+                    <td>$5485421.90</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total</td>
+                    <td>$533109233.81</td>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
+    <h1 id="aboutUs" class="collapseBottom">About Us</h1>
+    <p class="bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo magni fugit dicta aut
+        dolore eius nihil
+        nam aspernatur, sed optio totam cumque quos dolorum. Accusamus, ullam cupiditate? Doloremque totam vel eligendi
+        accusantium necessitatibus non? Repudiandae quae quaerat exercitationem. Expedita tempora voluptas velit
+        laboriosam porro sunt dolor animi non qui repudiandae eaque assumenda nam, voluptatum itaque, culpa, veniam
+        optio adipisci reprehenderit exercitationem perspiciatis molestias cumque quidem temporibus. Libero nihil esse
+        ad voluptas! Est sapiente autem ex! Laboriosam dolor distinctio soluta perspiciatis. Sapiente illum dicta labore
+        ratione esse nostrum, officiis cupiditate expedita neque corrupti deleniti vitae aperiam, alias, porro eligendi
+        blanditiis maxime voluptatibus odit eius fugit sed est. Commodi totam eaque, quod sed saepe quo excepturi
+        soluta. Adipisci doloremque numquam id corrupti culpa, ab nulla molestias nihil beatae reiciendis optio laborum
+        mollitia, suscipit et illo nobis. Ducimus ullam, labore, deleniti ipsum facere corrupti quod vel perspiciatis
+        maiores doloribus blanditiis nemo autem. Recusandae sit fugiat animi hic excepturi delectus, aperiam ex voluptas
+        iste vero nesciunt consequuntur esse asperiores culpa velit, molestiae minus suscipit repellat. Veritatis ex
+        quibusdam possimus quaerat maxime laborum quidem eligendi. Numquam, neque deserunt. Doloribus dolorum quia fuga
+        aspernatur accusamus impedit fugit corrupti consectetur! Recusandae fugit placeat accusantium! Doloribus dolore,
+        optio aliquam corrupti hic eaque! Facere cum assumenda hic exercitationem inventore deleniti quasi nam error
+        debitis necessitatibus quo accusantium cumque enim, tempore blanditiis deserunt fugiat aperiam non autem
+        consequuntur sit at illo. Ipsum quasi, velit pariatur tempora dicta molestias doloribus eaque. Necessitatibus
+        veritatis velit molestiae! Qui facere adipisci sed obcaecati repellat aut dignissimos mollitia velit commodi
+        nesciunt at fugit necessitatibus deserunt, quam recusandae amet rerum magni hic natus ipsam. Voluptates enim
+        quia eos dolor nam, deleniti asperiores in molestias officiis ad nostrum aliquam tempore praesentium tempora
+        omnis esse consequuntur, incidunt hic necessitatibus est voluptatibus odit. Doloribus earum corporis obcaecati
+        ab!</p>
+    <footer>&copy; PCS 2019</footer>
+</body>
+
+</html>

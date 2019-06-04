@@ -1,0 +1,266 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:1fr 6fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background-color: lightgray;
+    grid-column-start: 2;
+    text-align: center;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.productContainer {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+#line1, #line2 {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+article {
+    grid-column-start: 2;
+    overflow: auto;
+    height: 100%;
+}
+
+h1 {
+    grid-column-start: 2;
+    font-size: 1.5em;
+}
+
+.centered {
+    text-align: center;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+p {
+    grid-column-start: 2;
+}
+
+.productData {
+    text-align: justify;
+}
+
+.bottom {
+    padding-bottom: 50px;
+}
+
+.collapseBottom {
+    margin-bottom: 0px;
+}
+
+.collapseTop {
+    margin-top: 0px;
+}
+
+img {
+    grid-column-start: 2;
+    width: 100%;
+}
+
+video {
+    grid-column-start: 2;
+    width: 100%;
+}
+
+form {
+    grid-column-start: 2;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0px;
+    background-color: black;
+    z-index: 1;
+}
+
+footer {
+    height: 33px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    background-color: black;
+    color: white;
+    text-indent: 12.5%;
+    padding-top: 17px;
+    z-index: 1;
+}
+
+li {
+    padding-right: 7px;
+    display: inline;
+} 
+
+li a {
+    color: white;
+    text-decoration-line: none;
+}
+
+li a:hover {
+    color: red;
+    text-decoration-line: underline;
+}
+
+ul {
+    padding-left: 12.5%;
+}
+
+label {
+    display: block;
+    padding: 2px;
+}
+
+input:not(.button) {
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 0px;
+}
+
+.button {
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+table {
+    grid-column-start: 2;
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+td {
+    border: 1px solid black;
+    text-align: right;
+}
+
+tr td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+tfoot td:first-child {
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+thead td {
+    text-align: center;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: lightgray !important;
+}
+
+tfoot td:last-child, tbody td:last-child {
+    color: red;
+}
+
+@media screen and (min-width: 1000px) {
+
+    .productContainer {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr 1px 1fr;
+        margin-bottom: 20px;
+        grid-gap: 5px;
+        grid-template-areas: 
+                    "compH line1 choirH line2 candyH"
+                    "compImg line1 choirVid line2 candyImg"
+                    "compP line1 choirP line2 candyP"
+    }
+
+    #compH {
+        grid-area: compH;
+    } 
+
+    #compImg {
+        grid-area: compImg;
+    }
+
+    #compP {
+        grid-area: compP;
+    }
+
+    #choirH {
+        grid-area: choirH;
+    }
+
+    #choirVid {
+        grid-area: choirVid;
+    }
+
+    #choirP {
+        grid-area: choirP;
+    }
+
+    #candyH {
+        grid-area: candyH;
+    }
+
+    #candyImg {
+        grid-area: candyImg;
+    }
+
+    #candyP {
+        grid-area: candyP;
+    }
+
+    #line1 {
+        grid-area: line1;
+        background-color: black;
+    }
+
+    #line2 {
+        grid-area: line2;
+        background-color: black;
+    }
+
+    label {
+        display: inline;
+    }
+    
+    .button {
+        display: inline;
+    }
+
+    article {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
