@@ -3,6 +3,7 @@
     for (let index = 0; index < 10; index++) {
         window.app.counter.increment();
     }
+    // SL - comment - why var? (maybe consider configuring that to be an error in jshint)
     var counter1 = window.app.createCounter();
     var counter2 = window.app.createCounter();
     for (let index = 0; index < 5; index++) {
