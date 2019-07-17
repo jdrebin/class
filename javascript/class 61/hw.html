@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="message">
+    <button id="show">show</button>
+    <script src="hw.js"></script>
+    <script>
+        pcs.messageBox.show('hello world', choice => {
+            pcs.messageBox.show('you clicked ' + choice.innerHTML)
+        }, ['yes', 'no', 'maybe'])
+        const messageInput = document.getElementById('message');
+        document.getElementById('show').addEventListener('click', () => {
+            pcs.messageBox.show(messageInput.value);
+        });
+    </script>
+</body>
+
+</html>
