@@ -1,0 +1,34 @@
+[
+    {
+        "customer": "Bob",
+        "address": "123 Any Street",
+        "items": [
+            {
+                "item": "cookies",
+                "quantity": 5,
+                "total": 4.95
+            },
+            {
+                "item": "jelly beans",
+                "quantity": 2,
+                "total": 3
+            }
+        ]
+    },
+    {
+        "customer": "jim",
+        "address": "123 my Street",
+        "items": [
+            {
+                "item": "potatoes",
+                "quantity": 10,
+                "total": 4
+            },
+            {
+                "item": "steak",
+                "quantity": 1,
+                "total": 20.99
+            }
+        ]
+    }
+]
